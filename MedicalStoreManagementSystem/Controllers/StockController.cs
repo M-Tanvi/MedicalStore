@@ -19,7 +19,7 @@ namespace MedicalStoreManagementSystem.Controllers
     {
         this.context = context;
     }
-    // POST: StockController/Edit/5
+    // POST: StockController/Edit/5//
     [HttpPut("{id:int}")]
         public async Task<ActionResult> ManageStock(int id,Stock stock)
         {
