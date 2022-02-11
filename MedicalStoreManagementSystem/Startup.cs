@@ -36,7 +36,7 @@ namespace MedicalStoreManagementSystem
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
+
             services.AddDbContext<MedicalContext>(option => option.UseSqlServer(Configuration.GetConnectionString("MedicalConn")));
             services.AddCors(options =>
             {
@@ -48,6 +48,16 @@ namespace MedicalStoreManagementSystem
 
                 });
             });
+            //services.AddCors();
+            //services.AddCors(options =>
+            //{
+            //    options.AddPolicy("EnableCORS", builder =>
+            //    {
+            //        builder.AllowAnyOrigin()
+            //           .AllowAnyHeader()
+            //           .AllowAnyMethod();
+            //    });
+            //});
 
             services.AddTransient<IAdminRepository, AdminRepository>();
             services.AddControllers();
@@ -114,14 +124,26 @@ namespace MedicalStoreManagementSystem
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MedicalStoreManagementSystem v1"));
+                // app.UseSwagger();
+                // app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MedicalStoreManagementSystem v1"));
             }
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "MedicalStoreManagementSystem v1");
+            });
 
-            app.UseHttpsRedirection();
+
+
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
+            // app.UseCors("EnableCORS");
+            //app.UseCors(builder => builder
+            //       .AllowAnyOrigin()
+            //        .AllowAnyMethod()
+            //         .AllowAnyHeader());
             app.UseCors();
 
             app.UseAuthentication();
@@ -133,7 +155,7 @@ namespace MedicalStoreManagementSystem
                 endpoints.MapControllers();
             });
 
-            
+
         }
     }
 }

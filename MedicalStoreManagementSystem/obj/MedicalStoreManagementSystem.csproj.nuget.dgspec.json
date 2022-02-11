@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tannavi\\CG\\MedicalStore\\MedicalStoreManagementSystem\\MedicalStoreManagementSystem.csproj": {}
+    "C:\\Users\\dell\\Downloads\\MedicalStore-main\\MedicalStoreManagementSystem\\MedicalStoreManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tannavi\\CG\\MedicalStore\\MedicalStoreManagementSystem\\MedicalStoreManagementSystem.csproj": {
+    "C:\\Users\\dell\\Downloads\\MedicalStore-main\\MedicalStoreManagementSystem\\MedicalStoreManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tannavi\\CG\\MedicalStore\\MedicalStoreManagementSystem\\MedicalStoreManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\dell\\Downloads\\MedicalStore-main\\MedicalStoreManagementSystem\\MedicalStoreManagementSystem.csproj",
         "projectName": "MedicalStoreManagementSystem",
-        "projectPath": "C:\\Users\\Tannavi\\CG\\MedicalStore\\MedicalStoreManagementSystem\\MedicalStoreManagementSystem.csproj",
-        "packagesPath": "C:\\Users\\Tannavi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tannavi\\CG\\MedicalStore\\MedicalStoreManagementSystem\\obj\\",
+        "projectPath": "C:\\Users\\dell\\Downloads\\MedicalStore-main\\MedicalStoreManagementSystem\\MedicalStoreManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dell\\Downloads\\MedicalStore-main\\MedicalStoreManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Tannavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -62,6 +66,10 @@
               "target": "Package",
               "version": "[5.0.12, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.13, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
@@ -89,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.210\\RuntimeIdentifierGraph.json"
         }
       }
     }
